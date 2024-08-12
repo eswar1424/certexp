@@ -26,9 +26,12 @@ SECRET_KEY = 'django-insecure-*vx+ftd03^q9l58iy0rb-w$*4xs0n#tyw%$p&$iasn@f0bj!k$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://certexp.onrender.com','127.0.0.1']
 
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://certexp.onrender.com',
+    'http://127.0.0.1'
+]
 # Application definition
 
 INSTALLED_APPS = [
